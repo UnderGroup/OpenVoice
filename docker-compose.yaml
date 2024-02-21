@@ -1,0 +1,10 @@
+version: '2'
+services:
+  python-mcode:
+    build: .
+    ports:
+      - "14953:14953"
+    volumes:
+      - ./:/var/www/html
+    environment:
+      FLASK_PORT: 14953
